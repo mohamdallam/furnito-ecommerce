@@ -1,0 +1,69 @@
+.table tr td img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover;
+}
+
+td i {
+  cursor: pointer;
+}
+
+td,
+.th {
+  color: var(--primary-color);
+
+  font-weight: 500;
+}
+
+.table tr td img {
+  height: 80px !important;
+  width: 80px !important;
+  object-fit: cover;
+}
+td i {
+  cursor: pointer;
+}
+.buy__btn {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  /* background-color: rebeccapurple;     */
+  background-color: hsl(var(--accent) / 0.5) !important;
+  font-style: none;
+  color: var(--_hue) 30% 99%;
+
+  /* color: #fff; */
+
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+.buy__btn a {
+  padding: 8px 20px;
+  /* color: var(--_hue) 30% 99%; */
+  transition: 1.5s;
+  /* background-color: rebeccapurple;     */
+  /* background-color: hsl(var(--accent) / 0.5) !important; */
+  font-style: none;
+
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+.buy__btn a:hover {
+  /* outline: auto; */
+  /* color: yellow; */
+  color: #000000;
+
+  font-style: none;
+  transition: 1.5s;
+}
+.cartFonts {
+  color: var(--_hue) 30% 99%;
+  font-weight: 500;
+}
+
+thead {
+  background: var(--_hue) 30% 99% !important;
+}

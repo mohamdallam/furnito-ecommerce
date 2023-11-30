@@ -1,0 +1,74 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  --wrapperSize: clamp(4em, 3vmax, 7em);
+  padding: 1em 2em;
+  width: 100%;
+  display: grid;
+  --_size: 1.5rem;
+  place-items: center;
+}
+
+.btns {
+  display: flex;
+  gap: 1em;
+}
+
+.picker:focus {
+  outline: none;
+}
+
+.picker {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  height: calc(var(--wrapperSize) * 0.2);
+  width: 100%;
+  border: 0.2em solid hsl(var(--muted));
+  box-shadow: 0 0 0.8em hsl(var(--accent) / 0.4);
+  border-radius: 100vmax;
+  background: linear-gradient(to right,
+      hsl(20, 90%, 60%),    /* Adjusted color values for tritanopia */
+      hsl(45, 90%, 60%),
+      hsl(70, 90%, 60%),
+      hsl(95, 90%, 60%),
+      hsl(120, 90%, 60%),
+      hsl(145, 90%, 60%),
+      hsl(170, 90%, 60%),
+      hsl(195, 90%, 60%),
+      hsl(220, 90%, 60%),
+      hsl(245, 90%, 60%),
+      hsl(270, 90%, 60%),
+      hsl(295, 90%, 60%),
+      hsl(320, 90%, 60%),
+      hsl(345, 90%, 60%)
+  );
+}
+
+.picker::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: calc(var(--wrapperSize) * 0.35);
+  width: calc(var(--wrapperSize) * 0.35);
+  border: none;
+  box-shadow:
+    0 0 0 .25em hsl(var(--muted)),
+    0 0 0 -.4em hsl(var(--accent) / 0.8);
+  border-radius: 100vmax;
+  background-color: hsl(20, 90%, 60%);  /* Adjusted color value for tritanopia */
+  cursor: ew-resize;
+}
+
+.picker:focus::-webkit-slider-thumb {
+  box-shadow:
+    0 0 0 .25em hsl(var(--muted)),
+    0 0 0 .45em hsl(var(--accent) / 0.8);
+}
+
+.close {
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

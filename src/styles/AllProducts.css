@@ -1,0 +1,29 @@
+/* YourComponent.css */
+.custom-table-header th,
+.custom-table-row th,
+.custom-table-row td {
+  /* Add your common styling for th and tr here */
+  background-color: #03182e; /* Example background color, replace with your desired color */
+  color: #fff; /* Example text color, replace with your desired color */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.custom-table-row:hover {
+  /* Add your hover styling for tr here */
+  background-color: #0056b3; /* Example hover background color, replace with your desired color */
+  color: #fff;
+}
+
+.col-lg-9  th {
+    flex: 0 0 auto;
+    /* background-color: #0056b3 ; */
+     color:var(--_hue) 30% 99% ;
+     background-color: hsl(var(--accent) / 0.5) !important;
+
+}
+.col-lg-9  tr {
+    flex: 0 0 auto;
+    background-color: hsl(var(--accent) / 0.5) !important;
+}

@@ -1,0 +1,9 @@
+.form{
+    /* background: var(--primary-color); */
+     color:var(--_hue) 30% 99%;
+     
+background-color: hsl(var(--accent) / 0.5);
+
+    padding: 40px;
+    border-radius: 5px;
+}

@@ -1,0 +1,32 @@
+.auth__form {
+  /* background: var(--primary-color); */
+  background-color: hsl(var(--accent) / 0.5);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.auth__btn {
+  /* background: #fff; */
+  background-color: hsl(var(--accent) / 0.5);
+
+  /* color:var(--primary-color); */
+  color: var(--_hue) 30% 99%;
+
+  font-weight: 600;
+}
+
+.auth__form p {
+  margin-top: 30px;
+  color: var(--_hue) 30% 99%;
+  font-weight: 500;
+}
+
+.auth__form p a {
+  /* color:rgba(221, 221, 221, 0.735); */
+  color: var(--_hue) 30% 99%;
+}
+
+.auth__form input[type="file"] {
+  cursor: pointer;
+  color: #fff;
+}
