@@ -9,7 +9,7 @@ const View3D = () => {
       <div className="py-1">
         <iframe
           title="Three.js Room Configurator"
-          src="https://3d-room-mohamd-allam.netlify.app/"
+          src="https://room3d-allam.vercel.app/"
           width="100%"
           height="800px"
           frameBorder="0"
